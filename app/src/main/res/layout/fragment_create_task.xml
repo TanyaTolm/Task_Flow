@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5E5E5"
+    android:padding="24dp">
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:hint="Введите имя задачи..."
+        android:background="@android:color/transparent"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText,TextContrastCheck,Autofill" />
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine"
+        android:hint="Описание (необязательно)"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"
+        tools:ignore="HardcodedText,TextContrastCheck,Autofill" />
+
+    <TextView
+        android:id="@+id/tvSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:text="📅  Выберите дату"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#D9D9D9"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvSelectFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:text="📁  Выберите папку"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#D9D9D9"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_gravity="end"
+        android:backgroundTint="#5B9BD5"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+</LinearLayout>
